@@ -1,0 +1,99 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    /* background: green; */
+   
+	background-image: url('https://scontent.xx.fbcdn.net/v/t1.15752-9/274740799_2152542224921891_8514102411830833796_n.jpg?stp=dst-jpg_s280x280&_nc_cat=102&ccb=1-5&_nc_sid=aee45a&_nc_ohc=kxh4hthKFakAX8LzuZ2&_nc_oc=AQlpClQMsk5zwh0DvBgVEZua8ic-qXC3HsYLN7bAfnzI5dCiWIyEOz-H-Dlu4YlR6FswYOVvvEFmN-EDA7v_h3zd&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVJgNYi0ZQICEbnnewIFLvXV57rE4wHreVN1Smq7GPvfjA&oe=62768EC0')
+}
+
+.box {
+	width: 300px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+}
+@-webkit-keyframes my {
+    0% { color: #FF0099; }
+    50% { color: #fff; }
+    100% { color: #FF0033; }
+    }
+    @-moz-keyframes my {
+    0% { color:#FF0099; }
+    50% { color: #fff; }
+    100% { color: #FF0033; }
+    }
+    @-o-keyframes my {
+    0% { color: #FF0099; }
+    50% { color: #fff; }
+    100% { color: #FF0033; }
+    }
+    @keyframes my {
+    0% { color: #FF0099; }
+    50% { color: #fff; }
+    100% { color: #FF0033; }
+    }
+.thuong {
+    color: #ccc;
+    text-align: center;
+    background:#3d3d3d;
+font-size:24px;
+font-weight:bold;
+-webkit-animation: my 700ms infinite;
+-moz-animation: my 700ms infinite;
+-o-animation: my 700ms infinite;
+animation: my 700ms infinite;
+    
+}
+.heart {
+    
+	position: relative;
+	margin: auto;
+	height: 170px;
+	width: 200px;
+	animation: animate 1s infinite;
+
+}
+
+.heart:before, .heart:after {
+	content: '';
+	position: absolute;
+	background: #d63031;
+	width: 100px;
+	height: 160px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+    text-align: center;
+}
+
+.heart:before {
+	left: 100px;
+	transform: rotate(-45deg);
+	transform-origin: 0 100%;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+							0 10px 10px rgba(0,0,0,0.22);
+}
+
+.heart:after {
+	left: 0;
+	transform: rotate(45deg);
+	transform-origin: 100% 100%;
+}
+
+@keyframes animate {
+	0% {
+		transform: scale(1);
+	}
+	30% {
+		transform: scale(.8);
+	}
+	60% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
